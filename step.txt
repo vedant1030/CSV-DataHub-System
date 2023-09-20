@@ -1,0 +1,23 @@
+1. Import the csv module to read and write CSV files.
+
+2. Open the input CSV file using a with block, which automatically closes the file when the block is exited.
+
+3. Create separate dictionaries to store the counts for male and female names.
+
+4. Iterate through each row of the input file using a for loop and a DictReader object from the csv module.
+
+5. Extract the name, gender, and count from each row and add the count to the appropriate dictionary based on gender.
+
+6. Combine the male and female counts for each name into a single dictionary.
+
+7. Sort the names by frequency in descending order using the sorted() function and a lambda function to sort by the second element of each tuple.
+
+8. Open a new output CSV file using a with block.
+
+9. Write a header row to the output file.
+
+10. Iterate through each name in the sorted list and write its information to the output file, including the frequency, rank, and gender.
+
+11. Handle ties by incrementing the rank only when the frequency changes.
+
+12. Close the output file.
